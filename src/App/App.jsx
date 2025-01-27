@@ -21,7 +21,7 @@ function App() {
     {
       category: "Office plants",
       name: "Snake plant",
-      url: "src/assets/plant_img/plant2.png",
+      url: {process.env.PUBLIC_URL + "src/assets/plant_img/plant2.png"},
     },
     {
       category: "Bestsellers",
