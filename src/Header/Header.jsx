@@ -3,7 +3,7 @@ function Header() {
   return (
     <header className="z-10 fixed w-full py-4 flex justify-between align-middle bg-dark bg-opacity-40 backdrop-blur-md">
       <div id="logo" className="flex gap-3">
-        <img src="public/src/assets/plant-logo.svg" alt="plant-logo" />
+        <img src="public/assets/plant-logo.svg" alt="plant-logo" />
         <h2 id="logo-name" className="font-black text-3xl m-auto">
           Planto.
         </h2>
@@ -16,7 +16,7 @@ function Header() {
         <li>
           <label htmlFor="burger-menu" className="flex align-middle gap-1">
             Plants Type
-            <img src="public/src\assets\arrow-small.svg" alt="arrow" />
+            <img src="public\assets\arrow-small.svg" alt="arrow" />
           </label>
           {/* <select name="burger-menu">
             <option value="house-plants">House plants</option>
@@ -30,17 +30,17 @@ function Header() {
       <div className="flex gap-14">
         <img
           className="icon-header"
-          src="public/src/assets/search-icon.svg"
+          src="public/assets/search-icon.svg"
           alt="search"
         />
         <img
           className="icon-header"
-          src="public/src/assets/cart-icon.svg"
+          src="public/assets/cart-icon.svg"
           alt="cart"
         />
         <img
           className="icon-header lg:hidden"
-          src="public/src/assets/menu-icon.svg"
+          src="public/assets/menu-icon.svg"
           alt="menu"
         />
       </div>
