@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "SF Pro Display", sans-serif;
+  background: #1b2316;
+  color: #c9c9c9;
+}
+
+main {
+  padding: 0 7%;
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.bg-dark {
+  background: #1b2316bb;
+}
+
+.font-text {
+  font-family: "Inter";
+  font-size: medium;
+  line-height: normal;
+}
+
+.btn-scroll {
+  border: 1px solid #f2f2f2;
+  background: #f9f9f9;
+  width: 3.3rem;
+  height: 3.3rem;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+#root {
+  background-image: url("https://s3-alpha-sig.figma.com/img/fa07/6598/4e44f85e1a04562f820f1492949a1257?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qmaB217eGO5U-aR46cUXsofgb0fHED7dnnMS76Zwlu80TP1OzN6c4LQdQpg9S~0PIcZRNHDdj05M2YwgIA0ppf5GTX4kIZRtZ15ZYeoRJbe~5jJO-qR5FbhVyXVT1iOuyOBEYm8byF776aJN82~YPbaMDeenITrCiP~N36-Eq3EwL8d9J~tHxCYr5x2NER8ONUPj9DfaY~KzCSdIrDOnA1OXJYtkB0hsZ0xaPDDCsCJh-saMsMDC96gHS9~I9Slb42TNcSYmzWPHutDtUT604iCk5NhScAmRci4MyuDY4nCjhGAJzMCOHVHIijX0qduxh9pMU2at7bwpPidawyNlcQ__");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#title-1 {
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+.title-2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  margin: 8rem auto;
+
+  --s: 30px;
+  padding: 1rem;
+  border: 5px solid #2e5f00;
+  -webkit-mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.m-negative {
+  margin-top: -2rem;
+}
+
+.border-gray {
+  border: 2px solid #c9c9c9;
+}
+
+.content-card {
+  stroke: rgba(255, 255, 255, 0.42);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    #c9c9c94f,
+    #c9c9c900,
+    #c9c9c900,
+    #c9c9c949
+  );
+  border-image-slice: 1;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.content-active:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  scale: 1.05;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.placeholder-user {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.plant-img {
+  /* width: 25rem; */
+  margin-top: -30%;
+}
+
+.rounded-5xl {
+  border-top-left-radius: 40%;
+  /* border-bottom-right-radius: 20%; */
+}
+
+footer,
+header {
+  padding: 0 7%;
+}
+.flip {
+  transform: scaleX(-1);
+}
+.arrow-sm {
+  height: 1rem;
+}
+.arrow-movement {
+  animation-name: slide;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+@keyframes slide {
+  0% {
+    margin-right: 0px;
+  }
+  60% {
+    margin-right: 6px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
