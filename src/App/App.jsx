@@ -16,29 +16,29 @@ function App() {
     {
       category: "Trendy house plant",
       name: "Cathalea plant",
-      url: "src/assets/plant_img/plant4.png",
+      url: "src/assets/plant-img/plant4.png",
     },
     {
       category: "Office plants",
       name: "Snake plant",
-      url: {process.env.PUBLIC_URL + "src/assets/plant_img/plant2.png"},
+      url: "src/assets/plant-img/plant2.png",
     },
     {
       category: "Bestsellers",
       name: "Lorem ipsum",
-      url: "src/assets/plant_img/plant3.png",
+      url: "src/assets/plant-img/plant3.png",
     },
   ];
   const slides2 = [
     {
-      url: "src/assets/plant_img/plant5.png",
+      url: "src/assets/plant-img/plant5.png",
       name: "We Have Small And Great O2 Plant Collections",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       slideNr: "01",
     },
     {
-      url: "src/assets/plant_img/plant6.png",
+      url: "src/assets/plant-img/plant6.png",
       name: "Rainforest Plants For The Bathrooms",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
@@ -95,13 +95,13 @@ function App() {
             <Product
               name="Calathea plant"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              src="src/assets/plant_img/plant2.png"
+              src="src/assets/plant-img/plant2.png"
             />
-            <Product name="Desk plant" src="src/assets/plant_img/plant3.png" />
+            <Product name="Desk plant" src="src/assets/plant-img/plant3.png" />
             <Product></Product>
             <Product
               name="Cal 378 plant"
-              src="src/assets/plant_img/plant4.png"
+              src="src/assets/plant-img/plant4.png"
             />
             <Product description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab." />
           </div>
