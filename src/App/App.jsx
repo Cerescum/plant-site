@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Header from "../Header/Header.jsx";
-import Card from "../Card/Card.jsx";
 import Button from "../Button.jsx";
 import ButtonCart from "../ButtonCart.jsx";
 import ProductLarge from "../ProductLarge/ProductLarge.jsx";
