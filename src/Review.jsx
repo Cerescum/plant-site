@@ -8,7 +8,7 @@ function Review(props) {
         <img className="placeholder-user" src={props.src} alt="profile-pic" />
         <div className="my-auto">
           <h4 className="text-xl font-light">{props.name}</h4>
-          <img src="src/assets/rating-stars.svg" alt="rating" />
+          <img src="public/src/assets/rating-stars.svg" alt="rating" />
         </div>
       </div>
       <p className="mt-5 font-text">{props.description}</p>
@@ -21,7 +21,7 @@ Review.propTypes = {
   description: PropTypes.string,
 };
 Review.defaultProps = {
-  src: "src/assets/placeholder-user.jpg",
+  src: "public/src/assets/placeholder-user.jpg",
   name: "User",
   description: "Description wasn't found :(",
 };

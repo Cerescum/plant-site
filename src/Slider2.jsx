@@ -51,7 +51,7 @@ const Slider2 = ({ slides }) => {
             <Button />
             <div className="flex align-middle gap-6 my-auto">
               <img
-                src="src/assets/arrow.svg"
+                src="public/src/assets/arrow.svg"
                 alt="<"
                 className="flip arrow-sm my-auto cursor-pointer"
                 onClick={goToPrevious}
@@ -61,7 +61,7 @@ const Slider2 = ({ slides }) => {
                 <span className="text-xs">02</span>
               </p>
               <img
-                src="src/assets/arrow.svg"
+                src="public/src/assets/arrow.svg"
                 alt=">"
                 className="my-auto arrow-sm cursor-pointer"
                 onClick={goToNext}

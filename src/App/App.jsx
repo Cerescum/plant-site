@@ -16,29 +16,29 @@ function App() {
     {
       category: "Trendy house plant",
       name: "Cathalea plant",
-      url: "src/assets/plant-img/plant4.png",
+      url: "public/src/assets/plant-img/plant4.png",
     },
     {
       category: "Office plants",
       name: "Snake plant",
-      url: "src/assets/plant-img/plant2.png",
+      url: "public/src/assets/plant-img/plant2.png",
     },
     {
       category: "Bestsellers",
       name: "Lorem ipsum",
-      url: "src/assets/plant-img/plant3.png",
+      url: "public/src/assets/plant-img/plant3.png",
     },
   ];
   const slides2 = [
     {
-      url: "src/assets/plant-img/plant5.png",
+      url: "public/src/assets/plant-img/plant5.png",
       name: "We Have Small And Great O2 Plant Collections",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       slideNr: "01",
     },
     {
-      url: "src/assets/plant-img/plant6.png",
+      url: "public/src/assets/plant-img/plant6.png",
       name: "Rainforest Plants For The Bathrooms",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
@@ -62,7 +62,7 @@ function App() {
                 name="btn-play"
                 className="my-auto btn p-3 border-gray mr-2 rounded-full"
               >
-                <img src="src/assets/play-icon.svg" alt="play" />
+                <img src="public/src/assets/play-icon.svg" alt="play" />
               </button>
               <label htmlFor="btn-play" className="my-auto">
                 Live Demo ...
@@ -95,13 +95,16 @@ function App() {
             <Product
               name="Calathea plant"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              src="src/assets/plant-img/plant2.png"
+              src="public/src/assets/plant-img/plant2.png"
             />
-            <Product name="Desk plant" src="src/assets/plant-img/plant3.png" />
+            <Product
+              name="Desk plant"
+              src="public/src/assets/plant-img/plant3.png"
+            />
             <Product></Product>
             <Product
               name="Cal 378 plant"
-              src="src/assets/plant-img/plant4.png"
+              src="public/src/assets/plant-img/plant4.png"
             />
             <Product description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab." />
           </div>
@@ -133,7 +136,7 @@ function App() {
         <div className="md:flex justify-between gap-8">
           <div className="md:w-2/5">
             <div id="logo" className="flex gap-3 w-fit">
-              <img src="src/assets/plant-logo.svg" alt="plant-logo" />
+              <img src="public/src/assets/plant-logo.svg" alt="plant-logo" />
               <h2 id="logo-name" className="font-black text-3xl m-auto">
                 Planto.
               </h2>

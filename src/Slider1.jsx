@@ -32,7 +32,7 @@ const Slider1 = ({ slides }) => {
           </h3>
           <img
             className={`my-auto cursor-pointer ${animationClass}`}
-            src="src/assets/arrow.svg"
+            src="public/src/assets/arrow.svg"
             alt=">"
             id="arrow-left"
             onClick={goToNext}
