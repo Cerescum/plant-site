@@ -1,10 +1,10 @@
 import "./Header.css";
+import logo from "/assets/plant-logo.svg";
 function Header() {
   return (
     <header className="z-10 fixed w-full py-4 flex justify-between align-middle bg-dark bg-opacity-40 backdrop-blur-md">
       <div id="logo" className="flex gap-3">
-        <div id="planto-logo"></div>
-        {/* <img src="public/assets/plant-logo.svg" alt="planto-logo" /> */}
+        <img src={logo} alt="planto-logo" />
         <h2 id="logo-name" className="font-black text-3xl m-auto">
           Planto.
         </h2>
