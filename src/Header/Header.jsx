@@ -17,7 +17,7 @@ function Header() {
         <li>
           <label htmlFor="burger-menu" className="flex align-middle gap-1">
             Plants Type
-            <img src="public\assets\arrow-small.svg" alt="arrow" />
+            <img src="\assets\arrow-small.svg" alt="arrow" />
           </label>
           {/* <select name="burger-menu">
             <option value="house-plants">House plants</option>
