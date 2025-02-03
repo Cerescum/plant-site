@@ -2,3 +2,10 @@
   width: 1.6rem;
   stroke: #c9c9c9;
 }
+#planto-logo {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("public/assets/plant-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
