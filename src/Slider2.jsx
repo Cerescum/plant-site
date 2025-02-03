@@ -4,11 +4,16 @@ import { useState } from "react";
 const Slider2 = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+    setIsAnimating(true);
+    setTimeout(() => {
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setIsAnimating(false);
+    }, 400);
   };
 
   const goToPrevious = () => {
@@ -23,13 +28,17 @@ const Slider2 = ({ slides }) => {
 
   return (
     <>
-      <div className="flex content-card mt-36 mb-16 justify-evenly backdrop-blur-sm">
+      <div className="md:flex content-card mt-36 mb-16 justify-evenly backdrop-blur-sm">
         <img
-          className="plant-img-2 w-30 h-auto"
+          className={`plant-img-2 w-full md:w-2/4 lg:w-2/5 h-auto object-contain ${
+            isAnimating
+              ? "transition ease-in-out transform -translate-x-32 opacity-5 duration-500"
+              : ""
+          }`}
           src={slides[currentIndex].url}
           alt="plant4"
         />
-        <div className="w-5/12 py-10 m-auto">
+        <div className="w-5/6 md:w-2/5 py-10 m-auto">
           <h3 className="text-4xl font-semibold w-fit">
             {slides[currentIndex].name}
           </h3>
@@ -40,7 +49,7 @@ const Slider2 = ({ slides }) => {
                 : `${slides[currentIndex].description.substring(0, 150)}...`}
             </p>
             <button
-              className="underline"
+              className="underline text-xl md:text-base"
               onClick={() => setShowMore(!showMore)}
             >
               {" "}
@@ -75,7 +84,9 @@ const Slider2 = ({ slides }) => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-xs cursor-pointer"
+            className={`text-xs cursor-pointer ${
+              slideIndex === currentIndex ? "text-white" : "text-gray-600"
+            }`}
           >
             ●
           </div>

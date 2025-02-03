@@ -13,10 +13,12 @@ function Header() {
         id="menu"
         className="lg:flex hidden gap-x-12 text-lg list-none px-24 mx-0 my-auto"
       >
-        <li>Home</li>
+        <li>
+          <a href="#">Home</a>
+        </li>
         <li>
           <label htmlFor="burger-menu" className="flex align-middle gap-1">
-            Plants Type
+            <a href="#">Plant Types</a>
             <img src="\assets\arrow-small.svg" alt="arrow" />
           </label>
           {/* <select name="burger-menu">
@@ -25,16 +27,24 @@ function Header() {
             <option value="garden-plants">Garden plants</option>
           </select> */}
         </li>
-        <li>More</li>
-        <li>Contact</li>
+        <li>
+          <a href="#">More</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
       <div className="flex gap-14">
         <img
-          className="icon-header"
+          className="icon-header cursor-pointer"
           src="/assets/search-icon.svg"
           alt="search"
         />
-        <img className="icon-header" src="/assets/cart-icon.svg" alt="cart" />
+        <img
+          className="icon-header cursor-pointer"
+          src="/assets/cart-icon.svg"
+          alt="cart"
+        />
         <img
           className="icon-header lg:hidden"
           src="/assets/menu-icon.svg"

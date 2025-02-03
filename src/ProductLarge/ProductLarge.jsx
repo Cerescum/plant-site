@@ -11,7 +11,7 @@ function ProductLarge(props) {
   return (
     <div className={className}>
       <img
-        className="plant-img-2 w-full md:w-1/2 h-auto"
+        className="plant-img-2 w-full md:w-2/5 h-auto object-contain"
         src={props.src}
         alt="plant2"
       />

@@ -1,20 +1,19 @@
 import { useState } from "react";
 import Button from "./Button";
+import { CSSTransition } from "react-transition-group";
 
 const Slider1 = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animationClass, setAnimationClass] = useState("");
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const goToNext = () => {
-    setAnimationClass("animate-slide");
-
+    setIsAnimating(true);
     setTimeout(() => {
-      setAnimationClass("");
-    }, 1700);
-
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setIsAnimating(false);
+    }, 400);
   };
 
   const goToSlide = (slideIndex) => {
@@ -22,8 +21,21 @@ const Slider1 = ({ slides }) => {
   };
 
   return (
-    <div className="xl:w-1/3 lg:w-2/5 md:w-11/12 md:mb-0 mt-32 md:mt-0 h-fit border content-card p-0 rounded-5xl backdrop-blur-sm lg:my-14 my-auto">
-      <img className="plant-img" src={slides[currentIndex].url} alt="plant_1" />
+    <div
+      className={`xl:w-1/3 lg:w-2/5 md:w-11/12 md:mb-0 mt-32 h-fit border content-card p-0
+        rounded-5xl backdrop-blur-sm lg:my-14 my-auto ${
+          isAnimating ? "animate-pulse" : ""
+        }`}
+    >
+      <img
+        className={`plant-img ${
+          isAnimating
+            ? "transition ease-in-out transform -translate-x-28 opacity-5 duration-500"
+            : ""
+        }`}
+        src={slides[currentIndex].url}
+        alt="plant_1"
+      />
       <div className="p-10 m-negative">
         <p className="plant-type font-text">{slides[currentIndex].category}</p>
         <div className="flex justify-between">
@@ -31,7 +43,9 @@ const Slider1 = ({ slides }) => {
             {slides[currentIndex].name}
           </h3>
           <img
-            className={`my-auto cursor-pointer ${animationClass}`}
+            className={`my-auto cursor-pointer ${
+              isAnimating ? "animate-arrow" : ""
+            }`}
             src="/assets/arrow.svg"
             alt=">"
             id="arrow-left"
@@ -44,7 +58,9 @@ const Slider1 = ({ slides }) => {
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="text-xs cursor-pointer"
+              className={`text-xs cursor-pointer ${
+                slideIndex === currentIndex ? "text-white" : "text-gray-600"
+              }`}
             >
               ●
             </div>

@@ -50,7 +50,7 @@ main {
 }
 
 #root {
-  background-image: url("https://s3-alpha-sig.figma.com/img/fa07/6598/4e44f85e1a04562f820f1492949a1257?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qmaB217eGO5U-aR46cUXsofgb0fHED7dnnMS76Zwlu80TP1OzN6c4LQdQpg9S~0PIcZRNHDdj05M2YwgIA0ppf5GTX4kIZRtZ15ZYeoRJbe~5jJO-qR5FbhVyXVT1iOuyOBEYm8byF776aJN82~YPbaMDeenITrCiP~N36-Eq3EwL8d9J~tHxCYr5x2NER8ONUPj9DfaY~KzCSdIrDOnA1OXJYtkB0hsZ0xaPDDCsCJh-saMsMDC96gHS9~I9Slb42TNcSYmzWPHutDtUT604iCk5NhScAmRci4MyuDY4nCjhGAJzMCOHVHIijX0qduxh9pMU2at7bwpPidawyNlcQ__");
+  background-image: url("/assets/background.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -132,17 +132,18 @@ header {
 .arrow-sm {
   height: 1rem;
 }
-.arrow-movement {
+.animate-arrow {
   animation-name: slide;
-  animation-duration: 1.7s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 @keyframes slide {
   0% {
     margin-right: 0px;
   }
   60% {
-    margin-right: 6px;
+    margin-right: 3px;
   }
   100% {
     margin-right: 0px;
