@@ -31,17 +31,13 @@ function Header() {
       <div className="flex gap-14">
         <img
           className="icon-header"
-          src="public/assets/search-icon.svg"
+          src="/assets/search-icon.svg"
           alt="search"
         />
-        <img
-          className="icon-header"
-          src="public/assets/cart-icon.svg"
-          alt="cart"
-        />
+        <img className="icon-header" src="/assets/cart-icon.svg" alt="cart" />
         <img
           className="icon-header lg:hidden"
-          src="public/assets/menu-icon.svg"
+          src="/assets/menu-icon.svg"
           alt="menu"
         />
       </div>

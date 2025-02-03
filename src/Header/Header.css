@@ -5,7 +5,7 @@
 #planto-logo {
   width: 2rem;
   height: 2rem;
-  background-image: url("public/assets/plant-logo.svg");
+  background-image: url("/assets/plant-logo.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
